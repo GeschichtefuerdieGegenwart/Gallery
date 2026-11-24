@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <meta name="color-scheme" content="light">
-<title>Erst denken, dann zeigen · Vier Kurzfilme über digitalen Fachunterricht · Mario Walter</title>
-<meta name="description" content="Vier Kurzfilme über digitale Lernseiten für Geschichte, Gemeinschaftskunde, Psychologie und Demokratiebildung. Mario Walter, Hilde-Domin-Schule Herrenberg.">
+<title>Kidu und vier Beispiele aus dem Unterricht · Fortbildung zu KI und digitalem Unterricht · Mario Walter</title>
+<meta name="description" content="Kidu, eine Fortbildungsplattform für Lehrkräfte zu KI und digitalem Unterricht, und vier Kurzfilme aus dem eigenen Unterricht. Mario Walter, Hilde-Domin-Schule Herrenberg.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="de_DE">
-<meta property="og:title" content="Erst denken, dann zeigen. Vier Kurzfilme über digitalen Fachunterricht">
-<meta property="og:description" content="Vier Kurzfilme über digitale Lernseiten für Geschichte, Gemeinschaftskunde, Psychologie und Demokratiebildung. Mario Walter, Hilde-Domin-Schule Herrenberg.">
+<meta property="og:title" content="Fortbildung für mein Kollegium. Mit eigenem System.">
+<meta property="og:description" content="Kidu, eine Fortbildungsplattform für Lehrkräfte zu KI und digitalem Unterricht, und vier Kurzfilme aus dem eigenen Unterricht. Mario Walter, Hilde-Domin-Schule Herrenberg.">
 <meta property="og:image" content="https://geschichtefuerdiegegenwart.github.io/Gallery/bilder/vorschau.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -42,8 +42,8 @@ header.kopf{position:sticky;top:0;z-index:10;background:var(--papier);border-bot
 /* Auftakt */
 .kenn{margin:0 0 .7rem;font-weight:700;font-size:1rem;letter-spacing:.08em;text-transform:uppercase;color:var(--akz)}
 .auftakt{display:grid;grid-template-columns:minmax(0,11fr) minmax(0,10fr);gap:3.5rem;align-items:center;padding:4.5rem 0 3.5rem}
-h1{margin:0;font:600 clamp(3rem,6.6vw,5.9rem)/1 var(--serif);letter-spacing:-.015em}
-h1 em{font-style:italic;color:var(--akz);display:block}
+h1,.riesig{margin:0;font:600 clamp(3rem,6.6vw,5.9rem)/1 var(--serif);letter-spacing:-.015em}
+h1 em,.riesig em{font-style:italic;color:var(--akz);display:block}
 .vorspann{margin:1.7rem 0 0;font-size:clamp(1.2rem,1.7vw,1.4rem);line-height:1.45;max-width:36rem}
 .klein{margin:1rem 0 0;color:var(--leise);max-width:36rem}
 .zwei{position:relative;padding:0 0 0 .25rem}
@@ -54,6 +54,23 @@ h1 em{font-style:italic;color:var(--akz);display:block}
 .reiter b{display:grid;place-items:center;width:1.7rem;height:1.7rem;background:var(--tinte);color:var(--papier)}
 .platte--2 .reiter b{background:var(--akz);color:#fff}
 .zwei__text{margin:1.8rem 0 0;font-size:1rem;color:var(--leise);max-width:30rem}
+
+/* Kidu: Auftakt und Bausteine */
+.kidu{--akz:#2F5D62;--hell:#DBE7E6;display:grid;grid-template-columns:minmax(0,10fr) minmax(0,11fr);gap:3.5rem;align-items:center;padding:4rem 0 4.2rem}
+.kidu h1{font-size:clamp(2.5rem,5vw,4.5rem);line-height:1.02}
+.kidu h1 em{margin-top:.15em}
+.kidu .stand{max-width:36rem}
+.kidu .rahmen{box-shadow:14px 14px 0 #B68235}
+.kidu__unter{margin:1.9rem 0 0;font-size:1rem;color:var(--leise)}.kidu__unter b{color:var(--tinte)}
+.kidu .datei{margin-top:.3rem}
+.bau{--akz:#2F5D62;background:var(--flaeche);border-top:2px solid var(--tinte);border-bottom:2px solid var(--tinte);padding:3.8rem 0 4.2rem}
+.bau__liste{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.5rem;margin:2.4rem 0 0;padding:0;list-style:none;font-size:1.05rem}
+.bau__liste img{display:block;width:100%;border:2px solid var(--tinte);box-shadow:8px 8px 0 var(--platte);margin-bottom:1.3rem}
+.bau__liste li:nth-child(2) img{box-shadow:8px 8px 0 #B68235}.bau__liste li:nth-child(3) img{box-shadow:8px 8px 0 #2F5D62}
+.marke{display:inline-block;padding:.05rem .45rem;background:var(--tinte);color:var(--papier);font-weight:700;font-size:1rem}
+.bau__liste li:nth-child(2) .marke{background:#B68235;color:var(--tinte)}.bau__liste li:nth-child(3) .marke{background:#2F5D62}
+.bau__liste b{display:block;font:600 1.35rem/1.2 var(--serif);margin:.6rem 0 .35rem}
+.bau__dazu{margin:2.6rem 0 0;padding:1rem 1.2rem;border-left:6px solid var(--akz);background:var(--papier);max-width:54rem}
 
 /* Programm */
 .streifen{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.25rem;margin:0 0 4rem}
@@ -144,7 +161,8 @@ footer{padding:2.2rem 0 3.5rem;color:var(--leise);font-size:1rem}
 footer p{margin:.4rem 0;max-width:54rem}
 
 @media (max-width:62rem){
-  .auftakt{grid-template-columns:1fr;gap:2.5rem;padding:3.2rem 0 3rem}
+  .auftakt,.kidu{grid-template-columns:1fr;gap:2.5rem;padding:3.2rem 0 3rem}
+  .bau__liste{grid-template-columns:repeat(2,minmax(0,1fr))}.bau{padding:3rem 0 3.4rem}
   .zwei{max-width:36rem}
   .film{grid-template-columns:1fr;gap:1.8rem;padding:3.2rem 0}.film__text{position:static}.nr{font-size:3.4rem}
   .streifen{grid-template-columns:repeat(2,minmax(0,1fr));margin-bottom:3rem}
@@ -158,7 +176,8 @@ footer p{margin:.4rem 0;max-width:54rem}
   .kopf .wer span{display:none}
   header.kopf{position:static}html{scroll-padding-top:1rem}
   .kachel b{font-size:1.1rem}.streifen{gap:.9rem}
-  .sechs,.schritte,.grenzen,.blick{grid-template-columns:1fr}
+  .sechs,.schritte,.grenzen,.blick,.bau__liste{grid-template-columns:1fr}
+  .kidu .rahmen{box-shadow:8px 8px 0 #B68235}
   .blatt--geraet ul{columns:1}
   .rahmen{box-shadow:8px 8px 0 var(--hell)}
   .platte{box-shadow:8px 8px 0 var(--platte)}.platte--2{box-shadow:8px 8px 0 var(--akz)}
@@ -168,17 +187,47 @@ footer p{margin:.4rem 0;max-width:54rem}
 </style>
 </head>
 <body>
-<a class="sprung" href="#filme">Zu den Filmen</a>
+<a class="sprung" href="#kidu">Zum Inhalt</a>
 <header class="kopf"><div class="breit">
   <p class="wer">Mario Walter <span>· Hilde-Domin-Schule Herrenberg</span></p>
-  <nav aria-label="Abschnitte dieser Seite"><a href="#geschichte">Geschichte</a><a href="#gemeinschaftskunde">Gemeinschaftskunde</a><a href="#psychologie">Psychologie</a><a href="#demokratiebildung">Demokratiebildung</a><a href="#digital">Digital und KI</a></nav>
+  <nav aria-label="Abschnitte dieser Seite"><a href="#kidu">Kidu</a><a href="#geschichte">Geschichte</a><a href="#gemeinschaftskunde">Gemeinschaftskunde</a><a href="#psychologie">Psychologie</a><a href="#demokratiebildung">Demokratiebildung</a><a href="#digital">Digital und KI</a></nav>
 </div></header>
 <main>
 <div class="breit">
-  <section class="auftakt" aria-labelledby="haupt">
+  <section class="kidu" id="kidu" aria-labelledby="haupt">
+    <div class="kidu__text">
+      <p class="kenn">Fortbildung und Beratung · KI und digitaler Unterricht</p>
+      <h1 id="haupt">Fortbildung für mein Kollegium. <em>Mit eigenem System.</em></h1>
+      <p class="vorspann">An der Hilde-Domin-Schule Herrenberg übernehme ich Fortbildung und Beratung zu KI und digitalem Unterricht. Dafür habe ich Kidu entwickelt: eine Fortbildungsplattform für Lehrkräfte – zum Selbermachen und für die Beratung.</p>
+      <p class="stand">Stand: Kidu 4.58 vom 23.11.2026. Die Beratungsstunden beginnen im Dezember 2026. Kidu ist ein persönlicher Entwicklungsstand zur Diskussion und noch kein beschlossenes Schulkonzept.</p>
+    </div>
+    <div class="kidu__bild">
+      <div class="rahmen">
+        <video controls playsinline preload="none" width="1280" height="720" poster="bilder/poster-kidu.jpg" aria-label="Film »Was ist Kidu?«, 2:07 Minuten, ohne Ton">
+          <source src="filme/kidu.mp4" type="video/mp4">
+          <a href="filme/kidu.mp4">Film »Was ist Kidu?« als Datei öffnen</a>
+        </video>
+      </div>
+      <p class="kidu__unter"><b>Film »Was ist Kidu?«</b> · 2:07 Minuten, ohne Ton. Er spricht Kolleg*innen an, deshalb das Du. Alle Bildschirme sind echte Seiten.</p>
+      <p class="datei"><a href="filme/kidu.mp4" download>Film als Datei laden (MP4, 15 MB)</a></p>
+      <details class="alstext"><summary>Der Film als Text</summary><ol><li><span class="zeit">0:00</span><div><b>Was ist Kidu?</b><p>Das Kidu-Logo. Darunter die Frage: Was ist Kidu?</p></div></li><li><span class="zeit">0:05</span><div><b>KI für deine Arbeit</b><p>Die Startseite von Kidu im Tablet.</p><p>Kidu hilft dir, KI für deine Arbeit zu nutzen. Wann du sie brauchst. Wo du sie brauchst.</p></div></li><li><span class="zeit">0:13</span><div><b>Die Lampe</b><p>Wer dem Geist aus der Lampe nur sagt: »Ich habe Hunger«, bekommt vielleicht eine Bratwurst.</p></div></li><li><span class="zeit">0:20</span><div><b>Wissen und sagen</b><p>Aus dem Rauch werden zwölf Felder: Wissen, Sagen, Prüfen, Verantworten.</p><p>Wisse, was du willst. Und sag es.</p><p>Zum Beispiel: Die Anfrage »Mach mir ein Arbeitsblatt zur Bremsanlage« bringt etwas Übliches. Mit drei Angaben – erstes Ausbildungsjahr, viele lesen langsam, eine Seite – passt es zur Klasse.</p></div></li><li><span class="zeit">0:30</span><div><b>Prüfen</b><p>Hier endet das Märchen: Der Geist irrt nie. KI schon.</p><p>Prüf, was du bekommst.</p><p>Zum Beispiel: Ein Erwartungshorizont aus der KI nennt die Aussage eines Historikers. Im Buch steht sie nicht.</p></div></li><li><span class="zeit">0:39</span><div><b>Digitaler Unterricht</b><p>Und Kidu hilft dir, digitalen Unterricht zu bauen.</p><p>Viele Klassen haben inzwischen Tablets. Das Arbeitsblatt wird nur digital abgeheftet. Ein digitaler Schnellhefter.</p><p>Wann macht das Gerät den Unterricht besser?</p></div></li><li><span class="zeit">0:57</span><div><b>Punktuell, phasenweise, durchgängig</b><p>Punktuell: Erst selbst erklären – dann zeigt das Gerät die Musterlösung. (Fachbegriffe-Trainer, Sozialpädagogik, im Unterricht erprobt)</p><p>Phasenweise: 25 Minuten Rundgang zu zweit am Gerät – dann zurück in den Raum. (Wahlfach Demokratiebildung, Etappe 3, Entwurf)</p><p>Durchgängig: ein ganzes Schuljahr als Kompass – acht Etappen, in der Mitte die Kinderrechte.</p><p>Oder ein ganzer Kurs: drei Kapitel Geschichte, zwei Jahrgangsstufen, 36 Arbeitsblätter. Jede Stunde endet mit einem Satz – daraus wird die Lernspur.</p></div></li><li><span class="zeit">1:43</span><div><b>Das Prinzipienrad</b><p>Verdecken, Rückmelden, Messen, Variieren, Stufen, Bündeln.</p><p>Ob klein oder groß: Das Gerät tut eines von sechs Dingen, die Papier nicht kann. Gedeutet, gestritten und geurteilt wird im Raum.</p></div></li><li><span class="zeit">1:54</span><div><b>Schluss</b><p>Kidu: dazulernen. Ideen holen. Dich beraten lassen.</p><p>Endbild: Was hast du gerade vor?</p></div></li></ol></details>
+    </div>
+  </section>
+</div>
+
+<section class="bau" aria-labelledby="t-bau"><div class="breit">
+  <p class="kenn">Das System</p>
+  <h2 id="t-bau">So ist Kidu gebaut</h2>
+  <p class="lead">Kidu hat zwei Ziele: KI-Kompetenz im Kollegium und die Kompetenz, digitalen Unterricht zu gestalten. Lehrkräfte arbeiten allein damit oder in einer Beratungsstunde. Kidu ist in eigener Initiative entstanden und nicht an eine Schule gebunden.</p>
+  <ol class="bau__liste"><li><img src="bilder/kidu-start.jpg" alt="Startseite von Kidu: die Frage »Was hast du gerade vor?« mit fünf Anliegen, daneben die Bereiche KI-Training und Digitaler Unterricht" width="1272" height="795" loading="lazy"><span class="marke">Der Einstieg</span><b>Ein Anliegen statt eines Menüs</b>»Was hast du gerade vor?« Fünf Anliegen führen direkt zum passenden Werkzeug – von »Ich habe zehn Minuten und fange gerade erst an« bis »Ich habe bald eine Beratungsstunde«.</li><li><img src="bilder/kidu-ki.jpg" alt="Seite »Die Wunsch-Methode«: ein Halbkreis mit den Feldern Wissen, Sagen, Prüfen, Verantworten und einer Lampe in der Mitte" width="1272" height="795" loading="lazy"><span class="marke">KI-Training</span><b>Die Wunsch-Methode</b>Vier Sätze: wissen, sagen, prüfen, verantworten. Dazu zwölf Trainingsaufgaben am eigenen Material und vier Phasen rund um die Stunde. Stand der Methode: Vorschlag, noch nicht erprobt.</li><li><img src="bilder/kidu-unterricht.jpg" alt="Seite »Digitaler Unterricht«: vier Phasen als Fahrplan – Grundlagen, Digitalen Unterricht erstellen, Unterrichten, Nach der Stunde" width="1272" height="795" loading="lazy"><span class="marke">Digitaler Unterricht</span><b>In vier Phasen zur eigenen Stunde</b>Grundlagen, erstellen, unterrichten, nach der Stunde. Vor dem Erstellen steht die Papierfrage: Geht es auf Papier genauso gut? »Bleib beim Papier« ist eine mögliche Antwort.</li><li><img src="bilder/kidu-beratung.jpg" alt="Seite »Mein Beratungsbogen«: sechs Schritte auf einen Blick und der Einstieg in den Bogen" width="1272" height="795" loading="lazy"><span class="marke">Beratung</span><b>Mein Beratungsbogen</b>Etwa zwölf Minuten Fragen zu KI und Tablet, ohne Bewertung. Am Ende steht ein Bogen als PDF mit bis zu drei nächsten Schritten – damit die Beratungsstunde bei der Person anfängt.</li></ol>
+  <p class="bau__dazu"><b>Dazu:</b> neun Unterrichtsbeispiele aus vier Bereichen, je mit Film, Bildern und Beschreibung – und ein Skillkoffer mit den Anleitungen hinter den Werkzeugen. Die Beispiele stammen aus meinem eigenen Unterricht. Vier Fächer zeige ich hier ausführlicher.</p>
+</div></section>
+
+<div class="breit">
+  <section class="auftakt" aria-labelledby="t-vier">
     <div class="auftakt__text">
-      <p class="kenn">Vier Fächer · vier Kurzfilme · 16 Minuten</p>
-      <h1 id="haupt">Erst denken, <em>dann zeigen.</em></h1>
+      <p class="kenn">Aus dem eigenen Unterricht · vier Fächer · vier Kurzfilme · 16 Minuten</p>
+      <h2 class="riesig" id="t-vier">Erst denken, <em>dann zeigen.</em></h2>
       <p class="vorspann">Digitale Lernseiten für Geschichte, Gemeinschaftskunde, Psychologie und Demokratiebildung an einer beruflichen Schule. In allen vier legen sich Lernende fest, bevor das Material auflöst – und geurteilt wird im Raum, nicht am Gerät.</p>
       <p class="klein">Die Filme haben keinen Ton und starten mit dem Abspielknopf. Alle Bildschirme zeigen die echten Lernseiten.</p>
     </div>
@@ -207,8 +256,8 @@ footer p{margin:.4rem 0;max-width:54rem}
     </article>
     <article class="wegk">
       <h3>KI und digitaler Unterricht</h3>
-      <p>Wann das Tablet etwas beiträgt und wann Papier reicht. Wie die Seiten mit einem KI-System entstehen – und was der Unterricht daran geändert hat.</p>
-      <ul><li><a href="#digital"><b>Abschnitt</b> Das Tablet nur, wo es etwas kann</a></li><li><a href="#ki"><b>Abschnitt</b> KI als Werkzeug der Lehrkraft</a></li><li><a href="#erprobung"><b>Abschnitt</b> Was der Unterricht geändert hat</a></li><li><a href="#psychologie"><b>Film 3</b> Psychologie <span>3:56</span></a></li></ul>
+      <p>Kidu, die Fortbildungsplattform für das Kollegium. Wann das Tablet etwas beiträgt und wann Papier reicht. Wie die Seiten mit einem KI-System entstehen.</p>
+      <ul><li><a href="#kidu"><b>Film</b> Kidu – das System für die Fortbildung <span>2:07</span></a></li><li><a href="#digital"><b>Abschnitt</b> Das Tablet nur, wo es etwas kann</a></li><li><a href="#ki"><b>Abschnitt</b> KI als Werkzeug der Lehrkraft</a></li><li><a href="#erprobung"><b>Abschnitt</b> Was der Unterricht geändert hat</a></li><li><a href="#psychologie"><b>Film 3</b> Psychologie <span>3:56</span></a></li></ul>
     </article>
   </div>
 </div></section>
@@ -338,13 +387,13 @@ footer p{margin:.4rem 0;max-width:54rem}
 <section class="band band--schluss" id="kontakt" aria-labelledby="t-kon"><div class="breit">
   <p class="kenn">Gespräch</p>
   <h2 id="t-kon">Die Lernseiten zeige ich gern im Gespräch.</h2>
-  <p class="lead">Diese Seite zeigt Filme, keine Anwendungen: Die Lernseiten sind hier nicht verlinkt. Sie erreichen mich über die E-Mail, mit der Sie diesen Link erhalten haben.</p>
-  <p class="person">Ich unterrichte an der Hilde-Domin-Schule Herrenberg, einer beruflichen Schule in Baden-Württemberg: Geschichte mit Gemeinschaftskunde und Psychologie am Beruflichen Gymnasium sowie in der Ausbildung von Erzieher*innen. <span>Mario Walter</span></p>
+  <p class="lead">Diese Seite zeigt Filme, keine Anwendungen: Kidu und die Lernseiten sind hier nicht verlinkt. Sie erreichen mich über die E-Mail, mit der Sie diesen Link erhalten haben.</p>
+  <p class="person">Ich unterrichte an der Hilde-Domin-Schule Herrenberg, einer beruflichen Schule in Baden-Württemberg: Geschichte mit Gemeinschaftskunde und Psychologie am Beruflichen Gymnasium sowie in der Ausbildung von Erzieher*innen. Im Kollegium übernehme ich Fortbildung und Beratung zu KI und digitalem Unterricht. <span>Mario Walter</span></p>
 </div></section>
 </main>
 <footer><div class="breit">
   <p>Konzept, Didaktik, Aufgaben und Texte: Mario Walter (2026). Umgesetzt mit KI-Unterstützung (Claude); Auswahl, Prüfung und Überarbeitung durch den Urheber.</p>
-  <p>Die Filme zeigen Aufnahmen der Lernseiten. Eingaben in den Feldern sind Beispiele, keine Antworten von Lernenden.</p>
+  <p>Die Filme zeigen Aufnahmen der Lernseiten und von Kidu. Eingaben in den Feldern sind Beispiele, keine Antworten von Lernenden.</p>
   <p>Diese Seite setzt keine Cookies, zählt keine Besuche und lädt nichts von fremden Servern. Schriften: Fraunces und Atkinson Hyperlegible Next (SIL Open Font License, siehe Ordner »schriften«).</p>
 </div></footer>
 </body>
